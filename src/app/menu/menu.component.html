@@ -1,0 +1,35 @@
+<div class="left">
+  <div class="item">
+
+    <i class="fab fa-fw fa-angular"></i>
+  </div>
+  <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}" href="/">
+  <div class="item">
+    <i class="fas fa-fw fa-home"></i>
+   Главная
+    <div class="romb1"></div>
+  </div>
+  </a>
+  <a  routerLink="todo" routerLinkActive="active" href="/todo">
+  <div class="item">
+    <i class="fas fa-fw fa-columns"></i>  Тайменеджмент
+    <div class="romb2"></div>
+  </div>
+  </a>
+  <a routerLink="/home" routerLinkActive="active" href="/home">
+  <div class="item">
+    <i class="fas fa-fw fa-th"></i> Теория[практика]
+    <div class="romb3"></div>
+  </div>
+  </a>
+  <a routerLink="/inputl" routerLinkActive="active" href="/inputl">
+  <div class="item">
+    <i class="fas fa-fw fa-user-circle"></i> Длинна[input]
+  </div>
+  </a>
+</div>
+<div class="container">
+<router-outlet>
+
+</router-outlet>
+</div>

@@ -1,0 +1,8 @@
+<input [ngModel]="userName" (ngModelChange)="onNameChange($event)"/>
+<div [ngClass]="{invisible: visibility}">
+  <h1>Hello Angular 8</h1>
+  <p>
+    Angular 8 представляет модульную архитектуру приложения
+  </p>
+</div>
+<button (click)="toggle()">Toggle</button>

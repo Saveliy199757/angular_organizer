@@ -1,0 +1,45 @@
+<h1>Главная</h1>
+   <div class="row">
+     <div class="col-lg-6">
+  <div class="box" [class.isredbox]="isRed"></div>
+  <div class="box" [class.isredbox]="!isRed"></div>
+
+     </div>
+     <div class="col-lg-6">
+       <div class="box" [style.backgroundColor]="isRed ? 'red' : 'green'"></div>
+       <div class="box" [style.background-color]="!isRed ? 'red' : 'green'"></div>
+
+     </div>
+
+
+     <input type="checkbox" [(ngModel)]="isRed" />
+   </div>
+<div class="col-lg-6">
+<p>Количество кликов {{count}}</p>
+<button (click)="increase()">Click</button>
+<p>Привет {{name}}</p>
+<input type="text" [(ngModel)]="name" /> <br><br>
+<input type="text" [(ngModel)]="name" />`
+
+<input class="form-control" type="text" [value]="name" >
+</div>
+
+<div class="col-lg-6">
+  <h3>Длинна[input]</h3>
+  <inputl-app [(userName)]="names"></inputl-app>
+  <div>Количество символов: {{names.length}}</div>
+
+
+</div>
+
+
+<br>
+<br>
+<br>
+<h2>Количество кликов: {{clicks}}</h2>
+<splice-app [userName]="name1" [userAge]="age1" (onChanged)="onChanged($event)"></splice-app>
+<input type="number" [(ngModel)]="age1" />`
+
+
+
+

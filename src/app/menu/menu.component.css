@@ -1,0 +1,132 @@
+.left,
+.right {
+  top: 50%;
+  float: left;
+  transform: translateY(0%);
+}
+
+.left {
+  background: #337ab7;
+  display: inline-block;
+  white-space: nowrap;
+  width: 50px;
+  height: 100vh;
+  transition: width .5s;
+}
+.left a {
+  text-align: center;
+  text-decoration: none;
+}
+.left .active .item {
+  background-color: #333333 !important;
+}
+
+
+.right {
+  background: #fff;
+  width: 350px;
+  transition: width 1s;
+  border-style: solid;
+  border-color: #ccc;
+  border-width: 1px;
+}
+
+.left:hover {
+  width: 250px;
+}
+
+.item:hover {
+  background-color: #222;
+}
+
+.left .fas {
+  margin: 15px;
+  width: 20px;
+  color: #fff;
+}
+
+i.fas {
+  font-size: 17px;
+  vertical-align: middle !important;
+}
+
+.item {
+  height: 50px;
+  overflow: hidden;
+  color: #fff;
+}
+.active .romb1 {
+  width: 12px;
+  height: 12px;
+  position: absolute;
+  background-color: #337ab7;
+  transform: rotate(45deg);
+  left: 89%;
+  top: 69px;
+  display: block;
+  transition: left .5s;
+
+}
+.romb1 {
+  display: none;
+}
+.left:hover a[routerlinkactive="active"] .romb1 {
+  left: 98%;
+}
+.left .active .item .romb1 {
+  background-color: #333333!important;
+
+}
+.left:hover .item:hover .romb1 {
+  background-color: #3333!important;
+}
+
+.active .romb2 {
+  width: 12px;
+  height: 12px;
+  position: absolute;
+  background-color: #337ab7;
+  transform: rotate(45deg);
+  left: 89%;
+  top: 117px;
+  display: block;
+}
+.romb2 {
+  display: none;
+}
+.left:hover a[routerlinkactive="active"] .romb2 {
+  left: 98%;
+}
+.left .active .item .romb2 {
+  background-color: #333333!important;
+
+}
+.left:hover .item:hover .romb2 {
+  background-color: #3333!important;
+}
+
+.active .romb3 {
+  width: 12px;
+  height: 12px;
+  position: absolute;
+  background-color: #337ab7;
+  transform: rotate(45deg);
+  left: 89%;
+  top: 167px;
+  display: block;
+}
+.romb3 {
+  display: none;
+}
+.left:hover a[routerlinkactive="active"] .romb3 {
+  left: 98%;
+}
+.left .active .item .romb3 {
+  background-color: #333333!important;
+
+}
+.left:hover .item:hover .romb3 {
+  background-color: #3333!important;
+
+}
+
